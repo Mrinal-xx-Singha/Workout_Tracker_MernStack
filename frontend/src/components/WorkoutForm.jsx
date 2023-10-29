@@ -1,6 +1,13 @@
 import { useState } from "react"
 
+import { useWorkoutsContext } from "../hooks/useWorkoutsContext.jsx";
+
+
+
+
 const WorkoutForm = () => {
+
+    const {dispath} = useWorkoutsContext()
 
     const [title,setTitle] = useState('')
     const [load,setLoad] = useState('')
@@ -27,11 +34,14 @@ const WorkoutForm = () => {
 
         }
         if(response.ok){
+
             setTitle('')
             setLoad('')
             setReps('')
             setError(null)
             console.log('new Workout Added',json)
+            dispath({type: 'CREATE_WORKOUT',payload: json})
+        
         }
     }
   
