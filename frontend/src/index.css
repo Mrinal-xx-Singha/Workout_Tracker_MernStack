@@ -65,8 +65,7 @@ header a {
   cursor: pointer;
   background: #be0505;
   border: none;
-  padding: 6px;
-
+  padding: 13px;
   color: #fff;
 }
 .create {
@@ -98,10 +97,13 @@ form button {
 }
 div.error {
   padding: 10px;
-  background: #ffefef;
-  border: 1px solid var(--error);
-  color: var(--error);
+  background: #be0505;
+  border: 1px solid black;
+  color: #fff;
   border-radius: 4px;
   margin: 20px 0;
 }
 
+input.error {
+  border: 1px solid var(--error);
+}
