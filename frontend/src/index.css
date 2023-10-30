@@ -58,15 +58,16 @@ header a {
   font-size: 0.9em;
   color: #555;
 }
-.workout-details span {
+.workout-details button {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 60px;
+  right: 80px;
   cursor: pointer;
-  background: #f1f1f1;
+  background: #be0505;
+  border: none;
   padding: 6px;
-  border-radius: 50%;
-  color: #333;
+
+  color: #fff;
 }
 .create {
  padding-right:50px ;
@@ -103,3 +104,4 @@ div.error {
   border-radius: 4px;
   margin: 20px 0;
 }
+
