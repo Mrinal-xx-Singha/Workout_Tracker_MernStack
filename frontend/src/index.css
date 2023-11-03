@@ -64,6 +64,8 @@ header a {
   right: 80px;
   cursor: pointer;
   background: #be0505;
+  border-radius: 4px solid #333;
+  border: #333;
   border: none;
   padding: 13px;
   color: #fff;
